@@ -38,6 +38,7 @@ fi
 
 echo "-----> Installing dependencies"
 echo "cpanm options: $PERL_CPANM_OPT" | indent
+cpanm inc::Module::Install
 cpanm --installdeps . 2>&1 | indent
 
 echo "-----> Installing Starman"
